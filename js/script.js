@@ -1,4 +1,18 @@
-var sayHi = 'hello world !!!';
-var helloWorld = document.getElementById('hw');
-helloWorld.innerHTML = "JavaScript";
-alert('hh');
+function Animal() { }
+
+Animal.prototype.speak = function() {
+  console.log(this);
+  return this;
+}
+
+Animal.eat = function() {
+  console.log(this);
+  return this;
+}
+
+let obj = new Animal();
+obj.speak();
+//speak(); // global object
+
+obj.eat();
+//eat(); // global object
