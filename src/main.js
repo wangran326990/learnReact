@@ -9,8 +9,8 @@ const comment = {
       avatarUrl:'http://placekitten.com/g/64/64'
     }
 };
-const element = <Comment
+const element = (<Comment
                   date = {comment.date}
                   text = {comment.text}
-                  author = {comment.author} />;
+                  author = {comment.author} />);
 ReactDOM.render(element, document.getElementById('hw'));
